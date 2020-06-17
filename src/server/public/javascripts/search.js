@@ -8,10 +8,16 @@ const keywordSearch = async() => {
                         console.log(err);
                     })
     const videos = f.data;
+    const parent = document.querySelector(".result");
+    parent.innerHTML = "";
     videos.forEach( v => {
         addElement(v);
     })
-} 
+}
+
+const download = async(url, type) => {
+    window.location.assign('/download?url='+url+'&type='+type);
+}
 
 const addElement = function(video) {
     const parent = document.querySelector(".result");
@@ -48,18 +54,27 @@ const addElement = function(video) {
     const divItembtns = document.createElement("div");
     divItembtns.className = "item-btns";
     const downloadBtn = document.createElement("button");
+    const downloadBtn2 = document.createElement("button");
     const addListBtn = document.createElement("button");
     downloadBtn.className = "download-btn btn";
-    downloadBtn.textContent = "Download";
+    downloadBtn.textContent = "Download mp4";
+    downloadBtn2.className = "download-btn btn";
+    downloadBtn2.textContent = "Download mp3";
     addListBtn.className = "add-playlist-btn btn";
     addListBtn.textContent = "add-playList";
-
+    downloadBtn.addEventListener("click", () => {
+        download(video.url,"mp4")
+    });
+    downloadBtn2.addEventListener("click", () => {
+        download(video.url,"mp3")
+    });
 
     divItemTitle.appendChild(pTitle);
     divItemChannelName.appendChild(pChannelName);
     divItemDescription.appendChild(pDescription);
     divItemView.appendChild(pView);
     divItembtns.appendChild(downloadBtn);
+    divItembtns.appendChild(downloadBtn2);
     divItembtns.appendChild(addListBtn);
 
     divItemOption.appendChild(divItemTitle);
