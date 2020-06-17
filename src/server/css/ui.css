@@ -1,0 +1,65 @@
+.search-form{
+    display: flex;
+    height: 50px;
+    align-items: flex-stretch
+}
+
+.search-form input[type="search"] {
+    flex: 1;
+    border: 0;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.search-form input[type="submit"] {
+    width: 5em;
+    border: 0;
+    background-color: gold;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+}
+
+
+/* result-item */
+
+.result-item {
+    display: flex;
+    padding: 1rem 0;
+}
+
+.item-img {
+    height: 200px;
+}
+
+.item-option { 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left : 1rem;
+    line-height: 30px;
+    flex-grow: 1;
+}
+
+.item-title{
+    font-size: 1.5rem;
+}
+
+.item-option:nth-child(1){
+    background-color: red;
+    justify-content: end;
+}
+
+
+.item-btns{
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.download-btn {
+    background-color: skyblue;
+}
+
+.add-playlist-btn {
+    background-color: lightblue;
+}

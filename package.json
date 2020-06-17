@@ -1,0 +1,19 @@
+{
+  "name": "ytplayer",
+  "version": "1.0.0",
+  "description": "youtube music play and download",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.0.4",
+    "express": "^4.17.1",
+    "exrpess": "0.0.1-security",
+    "nodemon": "^2.0.4",
+    "yt-search": "^1.1.2"
+  }
+}
