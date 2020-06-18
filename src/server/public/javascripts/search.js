@@ -19,6 +19,17 @@ const download = async(url, type) => {
     window.location.assign('/download?url='+url+'&type='+type);
 }
 
+const addPlayLsit = async(url, name) => {
+    const f = await axios.get('/playlist/add?url='+url + "&name=" + name).
+                    then(result=>{
+                        return result;
+                    })
+                    .catch(err => {
+                        console.log(err);
+                    })
+}
+
+
 const addElement = function(video) {
     const parent = document.querySelector(".result");
     const li = document.createElement("li");
@@ -67,6 +78,10 @@ const addElement = function(video) {
     });
     downloadBtn2.addEventListener("click", () => {
         download(video.url,"mp3")
+    });
+
+    addListBtn.addEventListener("click", () =>{
+        addPlayLsit(video.url, video.title);
     });
 
     divItemTitle.appendChild(pTitle);

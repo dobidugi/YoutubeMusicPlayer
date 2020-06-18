@@ -13,6 +13,15 @@ module.exports.search = async function(keyword) {
 module.exports.download = async function(url, type, callback)  {
     const video = youtubedl(url);
     video.pipe(fs.createWriteStream('./tmp/tmp.'+type)).on("finish",function(){
-        callback()
+        callback();
+    });
+}
+
+module.exports.addPlayList = async function(url, name, callback) {
+    console.log(url,name);
+    const video = youtubedl(url);
+    video.pipe(fs.createWriteStream( 'src/server/public/music/'+name+ '.mp3')).
+    on("finish", function() {
+        callback();
     });
 }
