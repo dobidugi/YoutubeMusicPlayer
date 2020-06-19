@@ -5,6 +5,7 @@
 
 ```bash
 git clone https://github.com/dobidugi/YoutubeMusicPlayer
+cd YoutubeMusicPlayer
 npm install
 npm start
 ```
