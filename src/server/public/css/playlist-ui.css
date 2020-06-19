@@ -40,3 +40,7 @@ audio{
     white-space: nowrap;
     max-width: calc(100% - 5rem);
 }
+
+.github {
+    padding-right: 0.8rem;
+}

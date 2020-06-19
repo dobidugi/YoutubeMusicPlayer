@@ -53,13 +53,3 @@ button {
 	cursor: pointer;
 }
 
-.flex-container {
-	/* padding: 10px; */
-	background: lightgray;
-}
-.flex-item {
-	padding: 10px;
-	border: 3px solid rgb(50,50,40);
-	color: white;
-	background: mediumseagreen;
-}

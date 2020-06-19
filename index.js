@@ -16,7 +16,7 @@ function createWindow() {
 
     const playList = new BrowserWindow({
         width: 450,
-        height: 760,
+        height: 800,
         webPreferences: {
             nodeIntegration: true
         }

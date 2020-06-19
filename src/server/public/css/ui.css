@@ -70,3 +70,11 @@
 .add-playlist-btn {
     background-color: lightblue;
 }
+
+.github {
+    padding-right: 0.8rem;
+}
+
+a {
+    text-decoration: none;;
+}
