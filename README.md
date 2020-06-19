@@ -3,6 +3,12 @@
 <br>
 <br>
 
+```bash
+git clone https://github.com/dobidugi/YoutubeMusicPlayer
+npm install
+npm start
+```
+
 ### main
 
 ![img1](./resource/gif1.gif)
