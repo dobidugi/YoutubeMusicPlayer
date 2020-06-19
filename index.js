@@ -14,6 +14,16 @@ function createWindow() {
 
     win.loadURL('http://localhost:3000/')
 
+    const playList = new BrowserWindow({
+        width: 450,
+        height: 760,
+        webPreferences: {
+            nodeIntegration: true
+        }
+    })
+
+    playList.loadURL('http://localhost:3000/playlist')
+
 }
 
 app.whenReady().then(createWindow)

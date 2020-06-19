@@ -3,13 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <link rel="stylesheet" type="text/css" href="../css/playlist-ui.css">
+    <title>MusicPlayer</title>
 </head>
 <body>
-    <audio controls="controls">
-        <source src="../music/tmp.mp3" type="audio/mp3" />
-        <source src="../music/tmp.mp3" type="audio/mp3" />
-    </audio>
     
+    <div class="audio-form">
+        <!-- <div class="left-btn">
+            <
+        </div> -->
+        <audio class="audio" controls="controls">
+        </audio>
+        <!-- <div class="right-btn">
+            >
+        </div> -->
+    </div>
+    <button class="reload">♻️</button>
+    <div class="music-list">
+        <ul class="list-ul">
+
+        </ul>
+    </div>
+    <script src="../javascripts/playlist.js"></script>
 </body>
 </html>

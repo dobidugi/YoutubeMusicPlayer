@@ -23,5 +23,5 @@ const fs = require('fs');
 // ['--format=398']);
 // video.pipe(fs.createWriteStream('myvideo.mp4'));
 console.log("test");
-file.readFile();
-// server.start();
+// file.readFile();
+server.start();

@@ -1,0 +1,42 @@
+.audio-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-grow: 1 2 1;
+    background-color: red;
+}
+
+/* .left-btn, .right-btn {
+    width: 10%;
+} */
+
+audio{
+    width: 100%;
+}
+
+
+.reload {
+    display : flex;
+    padding : 1rem;
+    margin-left: auto;
+}
+
+
+.list-ul{
+    border-top: 1px solid lightslategray;
+}
+
+.music-item{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightslategray;
+    padding: 1rem;
+}
+
+.music-item > .title{ 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100% - 5rem);
+}
