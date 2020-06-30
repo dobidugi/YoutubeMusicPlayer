@@ -32,3 +32,7 @@ npm start
 
 ## Backend
 ### nodejs express yt-search youtube-dl
+
+<br>
+
+#### 2020.06.30 yt-search 동작안해서 검색이되질않음 
