@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^9.3.1",
+    "electron": "^15.5.5",
     "express": "^4.17.1",
     "exrpess": "0.0.1-security",
     "nodemon": "^2.0.4",
