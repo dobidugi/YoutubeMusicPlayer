@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "electron": "^9.3.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "exrpess": "0.0.1-security",
     "nodemon": "^2.0.4",
     "youtube-dl": "^3.0.2",
